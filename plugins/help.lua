@@ -8,7 +8,7 @@ local function get_helped_string(key)
 	if key == 'start' then
 		return _([[
 Hello %s 👋🏼, nice to meet you!
-I'm Group Butler, the first administration bot using the official Bot API.
+I'm Vpn989Group, the first administration bot using the official Bot API.
 
 *I can do a lot of cool stuffs*, here's a short list:
 • I can *kick or ban* users
@@ -346,7 +346,7 @@ local function do_keyboard_private()
     local keyboard = {}
     keyboard.inline_keyboard = {
     	{
-    	    {text = _("📢 Bot channel"), url = 'https://telegram.me/'..config.channel:gsub('@', '')},
+    	    {text = _("📢 Bot channel"), url = 'https://telegram.me/Vpn989' config.channel:gsub('@', '')},
     		{text = _("🌍 Select your language"), callback_data = 'selectlang'},
 	    },
 	    {
