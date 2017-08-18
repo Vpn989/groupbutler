@@ -8,7 +8,7 @@ local function get_helped_string(key)
 	if key == 'start' then
 		return _([[
 Hello %s 👋🏼, nice to meet you!
-I'm Vpn989Group, the first administration bot using the official Bot API.
+I'm Group Butler, the first administration bot using the official Bot API.
 
 *I can do a lot of cool stuffs*, here's a short list:
 • I can *kick or ban* users
@@ -159,7 +159,7 @@ Placeholders:
 `$id`: _will be replaced with the id_
 `$title`: _will be replaced with the group title_
 `$surname`: _will be replaced by the user's last name_
-`$rules`: _will be replaced by a link to the rules of the group. Please read_ [here](https://telegram.me/GroupButler_beta/26) _how to use it, or you will get an error for sure_
+`$rules`: _will be replaced by a link to the rules of the group. Please read_ [here](https://telegram.me/Vpn989) _how to use it, or you will get an error for sure_
 *Note*: `$name`, `$surname`, and `$title` may not work properly within markdown markup.
 
 *GIF/sticker as welcome message*
@@ -194,7 +194,7 @@ You can reply to a media (_photo, file, vocal, video, gif, audio_) with `/extra 
 • `/extra del [#trigger]`: delete the trigger and its message.
 
 *Note:* the markdown is supported. If the text sent breaks the markdown, the bot will notify that something is wrong.
-For a correct use of the markdown, check [this post](https://telegram.me/GroupButler_ch/46) in the channel.
+For a correct use of the markdown, check [this post](https://telegram.me/Vpn989) in the channel.
 Now supports placeholders. Check the "welcome" tab for the list of the available placeholders
 ]])
 	elseif key == 'warns' then
@@ -346,7 +346,7 @@ local function do_keyboard_private()
     local keyboard = {}
     keyboard.inline_keyboard = {
     	{
-    	    {text = _("📢 Bot channel"), url = 'https://telegram.me/Vpn989' config.channel:gsub('@', '')},
+    	    {text = _("📢 Bot channel"), url = 'https://telegram.me/'..config.channel:gsub('@', '')},
     		{text = _("🌍 Select your language"), callback_data = 'selectlang'},
 	    },
 	    {
